@@ -13,7 +13,7 @@ public class ShopRepositoryTest {
         ShopRepository shopRepo = new ShopRepository();
         Product product1 = new Product(1, "Баскетбольный мяч", 500);
         Product product2 = new Product(2, "Футбольный мяч", 800);
-        Product product3 = new Product(1, "Теннисный мяч", 300);
+        Product product3 = new Product(3, "Теннисный мяч", 300);
 
         shopRepo.add(product1);
         shopRepo.add(product2);
@@ -31,7 +31,7 @@ public class ShopRepositoryTest {
         ShopRepository shopRepo = new ShopRepository();
         Product product1 = new Product(1, "Баскетбольный мяч", 500);
         Product product2 = new Product(2, "Футбольный мяч", 800);
-        Product product3 = new Product(1, "Теннисный мяч", 300);
+        Product product3 = new Product(3, "Теннисный мяч", 300);
 
         shopRepo.add(product1);
         shopRepo.add(product2);
