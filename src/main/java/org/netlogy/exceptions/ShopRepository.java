@@ -15,6 +15,12 @@ public class ShopRepository {
 
     //Метод добавления товара в репозиторий
     public void add(Product product) {
+        for (int i = 0; i < products.length; i++) {
+            if (products[i].getId() == product.getId()) {
+                int duplicateId = product.getId();
+                throw new AlreadyExistsException("Element with id: " + duplicateId + " already exists");
+            }
+        }
         products = addToArray(products, product);
     }
 
